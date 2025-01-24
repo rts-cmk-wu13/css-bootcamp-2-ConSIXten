@@ -1,0 +1,14 @@
+.logo{
+    height: 10rem;
+    width: 45rem;
+    display: grid;
+}
+
+.header__grid{
+    grid-column: 2 / span 3;
+}
+
+header__navigation{
+    display: grid;
+    grid-column: 5;
+}
