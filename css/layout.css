@@ -10,7 +10,7 @@
     .wrapper{
         grid-template-columns: 
         [fullw-start]1fr 
-        [content-start]10rem 40.5rem [content-end]
+        [content-start]repeat(4, 13.5rem) [content-end]
         /* [content-start] repeat(6, 13.5rem) [content-end]  */
          1fr[fullw-end];
     }
@@ -69,7 +69,7 @@ footer > *{
 }
 
 .half{
-    grid-column: 3;
+    grid-column: span 2;
 }
 
 .grid1{
