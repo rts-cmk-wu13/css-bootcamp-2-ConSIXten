@@ -10,13 +10,29 @@
     .wrapper{
         grid-template-columns: 
         [fullw-start]1fr 
-        [content-start] repeat(6, 18rem) [content-end] 
+        [content-start]10rem 40.5rem [content-end]
+        /* [content-start] repeat(6, 13.5rem) [content-end]  */
          1fr[fullw-end];
     }
 }
-header{
-    display: block;
+
+/* .wrapper__card{
+    display: grid;
+    grid-template-columns: 
+    [fullw-start]1.5rem 
+    [content-start] 1fr 1fr [content-end] 
+    1.5rem[fullw-end];
 }
+
+@media screen and (width >= 74rem){
+    .wrapper__card{
+        grid-template-columns: 
+        [fullw-start]1fr 
+        [content-start]repeat(6, 13.5rem) [content-end]
+         1fr[fullw-end];
+    }
+} */
+
 
 header, main, footer{
     grid-column: fullw;
@@ -32,8 +48,9 @@ footer > *{
     grid-template-columns: subgrid;
 }
 
+
 .full-width{
-    display: grid;
+    display: block;
     grid-template-columns: subgrid;
     grid-column: fullw;
 }
@@ -48,21 +65,30 @@ footer > *{
 .no-columns{
     grid-column: content;
     display: block;
+    
 }
 
 .half{
-    grid-column: 3 / span 4;
-
+    grid-column: 3;
 }
 
-/* .half__1gridcell{
-    grid-column: 1;
-} */
+.grid1{
+    grid-column: 2;
+}
 
 .section{
     padding-block: 4rem;
 }
 
-li{
-    list-style: none;
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.fp-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }

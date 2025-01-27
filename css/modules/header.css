@@ -1,14 +1,12 @@
-.logo{
-    height: 10rem;
-    width: 45rem;
-    display: grid;
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
 }
 
-.header__grid{
-    grid-column: 2 / span 3;
-}
-
-header__navigation{
-    display: grid;
-    grid-column: 5;
+@media screen and (max-width: 37.5rem) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
 }
