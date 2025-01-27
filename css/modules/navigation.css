@@ -1,0 +1,10 @@
+.navigation{
+display: flex;
+justify-content: space-around;
+gap: 1rem;
+}
+
+.navigation__list{
+    border-top: 2px solid rgba(160, 160, 160, 0.611);
+    border-bottom:2px solid rgba(160, 160, 160, 0.611);
+}
