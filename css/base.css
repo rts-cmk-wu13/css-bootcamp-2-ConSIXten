@@ -16,3 +16,9 @@ li{
 .red{
     color: red;
 }
+
+footer{
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+}
